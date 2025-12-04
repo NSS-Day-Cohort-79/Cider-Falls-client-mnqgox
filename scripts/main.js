@@ -1,6 +1,6 @@
 //import parkAreaList() from './parkAreas.js';
 //import { parkAreaList } from './parkAreas.js';
-//import { guestList } from './guests.js';
+import { guestList } from './guests.js';
 //import { serviceList } from './services.js';
 //
 //return parkAreaList();
@@ -14,6 +14,8 @@
 
 // import guestList() from './guests.js';
 // return guestList();
+//invoke guestList()
+console.log(guestList())
 // invoke serviceList(
 // import serviceList() from './services.js
 // return serviceListHTML
