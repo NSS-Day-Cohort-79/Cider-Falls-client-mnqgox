@@ -7,11 +7,12 @@ flowchart TD
     ParkAreas["ParkAreas"]
     Services["Services"]
     Guests["Guests"]
-    database(["database"])
+    database[("database")]
     main-->ParkAreas
     ParkAreas-->database
     ParkAreas-->Services
     Services-->database
     main-->Guests
+    main-->Services
     Guests-->database
 ```

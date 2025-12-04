@@ -33,6 +33,12 @@ main->>Guests: give me guestList()
     Database-->>Guests: return getGuests()
 Guests-->>main: return guestList()
 
+main->>Services: invoke serviceList()
+    loop loop through services list
+        note over Services: Build service list html
+    end
+Services-->>main: return service list html
+
 main->>ParkAreas: invoke parkAreaList()
 ParkAreas->>Database: invoke getAreas()
 Database-->>ParkAreas: return a copy of the areas data
