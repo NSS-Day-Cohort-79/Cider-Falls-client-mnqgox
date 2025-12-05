@@ -1,5 +1,5 @@
 import {getArea, getGuest} from '../scripts/database.js';
-import { serviceList } from './services.js';
+import { areaServicesList } from './services.js';
 
 const parkAreas = getArea();
 const allGuests = getGuest();
@@ -22,7 +22,7 @@ export const parkAreaList = () => {
     for (const area of parkAreas) {
         areaHTML += `<section class="park-area">
             <h3 class="area-title" data-id="${area.id}">${area.title}</h3>
-            <div class="area-services">${serviceList(area)}</div>
+            <div class="area-services">${areaServicesList(area)}</div>
         </section>`
     }
     return areaHTML;

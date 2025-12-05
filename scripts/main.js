@@ -13,15 +13,13 @@ mainContainer.innerHTML = `
         <section class="services">
             Park services: ${servicesListHTML}
         </section>
+        <h2>Park Areas</h2>
         <section class="areas">
-            <h2>Park Areas</h2>
             ${parkAreasListHTML}
         </section>
-            <body>
-            <header>
         <aside class="guests">
             ${guestListHTML}
-            </aside>
+        </aside>
         <footer>
             <p>Main Phone: (XXX)XXX-XXXX, Email Address: info@ciderfallspark.com Address: 123 Cider Falls Rd, Cider Falls, CF 12345</p>
         </footer>

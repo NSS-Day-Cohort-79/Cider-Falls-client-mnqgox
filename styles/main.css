@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-Body  {
+body  {
     font-family: Arial, sans-serif;
     background-color: #a2a480;
-    color: #333;
+    color: #363636;
     line-height: 1.6;
 }
-Body h1 {
+body h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #024f09;
+    color: #7f794c;
 }
 
     .top-right-image {
@@ -24,15 +24,23 @@ Body h1 {
         height: auto;
     }
    
-.container {
+    .services {
+        background-color: #1c8825;
+        color: rgb(87, 91, 87);
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }   
+   
+.areas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
-    gap: 20px;
+    gap: 0px;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
-    height: 100vh;
+    height: 25vh;
 
 }
 .footer{
@@ -45,13 +53,12 @@ Body h1 {
     width: 100%;
 }
 
-    .guestContainer {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    background-color: #1c661d;
+    .guests{
+    float: right;
+    background-color: #c4e1c4;
     padding: 15px;
     border-radius: 8px;
     overflow-y: auto;
-    position: bottom right
+    position: right
     ;
 }

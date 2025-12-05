@@ -41,7 +41,7 @@ export const areaServicesList = (area) => {
 
     areaServicesHTML += serviceNames.map((serviceName) => {
         return `<li class="areaService">${serviceName}</li>`
-    }).join()
+    }).join("")
     areaServicesHTML +=`</ul>`
     return areaServicesHTML
 }
