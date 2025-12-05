@@ -1,15 +1,32 @@
 // import getServices and getAreaServices
-import { getServices, getAreaServices } from "./database.js"
+import { getServices, getAreaServices, getArea } from "./database.js"
 
 // invoke the functions and get the data to work with
 const allServices = getServices()
 const allAreaServices = getAreaServices()
+const allAreas = getArea()
+
+document.addEventListener("click", (clickEvent) => {
+    if (clickEvent.target.className === "service") {
+        const serviceID = parseInt(clickEvent.target.dataset.id)
+        const serviceName = clickEvent.target.innerHTML
+        const foundAreaServices = allAreaServices.filter((areaService) => areaService.service_id === serviceID)
+        let alertString = `${serviceName} is available in `
+        let nameArray = []
+        for (const foundAreaService of foundAreaServices) {
+            const areaName = allAreas.find((area) => area.id === foundAreaService.area_id).title
+            nameArray.push(areaName)
+        }
+        alertString += nameArray.join(" and ")
+        window.alert(alertString)
+    }
+})
 
 // export function to return service list html
 export const serviceList = () => {
     let servicesHTML =""
     servicesHTML += allServices.map((service) => {
-        return `<span class="service" id="service-${service.id}">${service.name}</span>`
+        return `<span class="service" id="service-${service.id}" data-id="${service.id}">${service.name}</span>`
     }).join(", ")
     return servicesHTML
 }
