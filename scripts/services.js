@@ -7,11 +7,10 @@ const allAreaServices = getAreaServices()
 
 // export function to return service list html
 export const serviceList = () => {
-    let servicesHTML =`<ul class="service-list">`
+    let servicesHTML =""
     servicesHTML += allServices.map((service) => {
-        return `<li class="service" id="service-${service.id}">${service.name}</li>`
-    }).join()
-    servicesHTML +=`</ul>`
+        return `<span class="service" id="service-${service.id}">${service.name}</span>`
+    }).join(", ")
     return servicesHTML
 }
 
