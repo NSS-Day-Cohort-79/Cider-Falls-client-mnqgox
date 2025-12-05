@@ -35,12 +35,12 @@ Body h1 {
     height: 100vh;
 
 }
-.footer p {
+.footer{
     background-color: #024f09;
     color: rgb(64, 189, 75);
     text-align: bottom center;
     padding: 10px 0;
-    position: fixed;
+    position: bottom center;
     bottom: 0;
     width: 100%;
 }
