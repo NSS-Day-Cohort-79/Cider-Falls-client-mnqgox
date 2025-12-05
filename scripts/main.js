@@ -1,28 +1,30 @@
-//import parkAreaList() from './parkAreas.js';
-//import { parkAreaList } from './parkAreas.js';
+import { parkAreaList } from './parkAreas.js';
 import { guestList } from './guests.js';
-//import { serviceList } from './services.js';
-//
-//return parkAreaList();
-//return guestList();
-//return serviceList();
+import { serviceList } from './services.js';
 
+const parkAreasListHTML = parkAreaList();
+const guestListHTML = guestList();
+const servicesListHTML = serviceList();
 
+const mainContainer = document.querySelector("#container");
 
-
-// return parkAreaList();
-
-// import guestList() from './guests.js';
-// return guestList();
-//invoke guestList()
-console.log(guestList())
-// invoke serviceList(
-// import serviceList() from './services.js
-// return serviceListHTML
-//invoke parkAreaList();
-// return parkAreaList();
-
-//import main container element
-// return container element
-// set innerHTML to container element
-
+mainContainer.innerHTML = `
+    <header>
+        <H1>Cider Flalls Park</H1>
+    </header>
+        <section class="services">
+            <h2>Services</h2>
+            ${servicesListHTML}
+        </section>
+        <section class="areas">
+        <h2>Park Areas</h2>
+        ${parkAreasListHTML}
+        </section>
+     <aside class="guests">
+        <h2>Guests</h2>
+        ${guestListHTML}
+     </aside>
+<footer>
+    <p>Main Phone: (XXX)XXX-XXXX, Email Address: info@ciderfallspark.com Address: 123 Cider Falls Rd, Cider Falls, CF 12345</p>
+</footer>
+`;
