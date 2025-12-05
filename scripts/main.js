@@ -2,7 +2,7 @@
 import { guestList } from './guests.js';
 //import { serviceList } from './services.js';
 
-//const parkAreasListHTML = parkAreaList();
+const parkAreasListHTML = "" // = parkAreaList();
 const guestListHTML = guestList();
 //const servicesListHTML = serviceList();
 
@@ -13,8 +13,7 @@ mainContainer.innerHTML = `
     <header>
         <h1>Cider Falls State Park</h1>
         <section class="services">
-            <h2>Services</h2>
-            {servicesListHTML}
+            Park services: ${servicesListHTML}
         </section>
         <section class="areas">
         <h3>Park Areas</h3>
