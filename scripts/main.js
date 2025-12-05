@@ -9,11 +9,11 @@ const servicesListHTML = serviceList();
 const mainContainer = document.querySelector("#container");
 
 mainContainer.innerHTML = `
+    <body>
     <header>
-        <H1>Cider Flalls Park</H1>
-    </header>
+        <h1>Cider Falls State Park</h1>
         <section class="services">
-            <h2>Services</h2>
+            <h1>Services</h1>
             ${servicesListHTML}
         </section>
         <section class="areas">
