@@ -2,6 +2,7 @@
     margin: 5;
     padding: 10;
     box-sizing: border-box;
+
 }
 
 body  {
@@ -43,18 +44,8 @@ body h2 {
     height: 25vh;
 
 }
-.footer{
-    background-color: #024f09;
-    color: rgb(64, 189, 75);
-    text-align: bottom ;
-    padding: 10px 0;
-    position: bottom ;
-    bottom: 0;
-    width: 100%;
-    
-}
 
-    .guests{
+.guests{
     float: right;
     background-color: #c4e1c4;
     padding: 15px;
@@ -62,47 +53,59 @@ body h2 {
     overflow-y: auto;
     position: right;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-    max-height: 400px;
-
+    
+    max-height: 600px;
+    
 }
 
-    .guests h3 {
-        margin-top: 0;
-        color: #2f662f;
-    }
+.guests h3 {
+    margin-top: 0;
+    color: #2f662f;
+}
 
-    .guests ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-
-        max-height: 150px;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-    .guests li {
-        padding: 8px 0;
-        margin-bottom: 1px solid #ddd;
-        background-color: #e6f2e6;
-        border-radius: 4px;
-        border-left: 3px solid #4caf50;
-
-    }
-    .guest-list ul::-webkit-scrollbar {
-  width: 8px;
+.guests ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.guests li {
+    padding: 8px 0;
+    margin-bottom: 1px solid #ddd;
+    background-color: #e6f2e6;
+    border-radius: 4px;
+    border-left: 3px solid #4caf50;
+    
+}
+.guest-list ul::-webkit-scrollbar {
+    width: 8px;
 }
 
 .guest-list ul::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
+    background: #f1f1f1;
+    border-radius: 10px;
 }
 
 .guest-list ul::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+    background: #888;
+    border-radius: 10px;
 }
 
 .guest-list ul::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
+footer{
+       
+        background-color: transparent;
+        color: rgb(51, 52, 51);
+        text-align: bottom ;
+        padding: 5px 0;
+        position: fixed;
+        margin-top: 20px;
+        bottom: 0;
+        width: 100%;
+        
+    }
