@@ -46,11 +46,12 @@ body h2 {
 .footer{
     background-color: #024f09;
     color: rgb(64, 189, 75);
-    text-align: bottom center;
+    text-align: bottom ;
     padding: 10px 0;
-    position: bottom center;
+    position: bottom ;
     bottom: 0;
     width: 100%;
+    
 }
 
     .guests{
@@ -59,6 +60,49 @@ body h2 {
     padding: 15px;
     border-radius: 8px;
     overflow-y: auto;
-    position: right
-    ;
+    position: right;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    max-height: 400px;
+
+}
+
+    .guests h3 {
+        margin-top: 0;
+        color: #2f662f;
+    }
+
+    .guests ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .guests li {
+        padding: 8px 0;
+        margin-bottom: 1px solid #ddd;
+        background-color: #e6f2e6;
+        border-radius: 4px;
+        border-left: 3px solid #4caf50;
+
+    }
+    .guest-list ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.guest-list ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.guest-list ul::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.guest-list ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
